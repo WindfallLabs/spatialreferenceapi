@@ -88,7 +88,8 @@ This project would not be possible without the hard work from the awesome folks 
 
     >>> import re
 
-    >>> re.findall(" \d+", sr.text)[0] != " 9102700"
+    # Make sure the 9 was removed from the postgis format
+    >>> re.findall(" \d+", sr.text)[0] != " 9102700" and re.findall(" \d+", sr.text)[0] == " 102700"
     True
 
 
