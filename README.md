@@ -11,7 +11,24 @@ The goal of this project is to get spatial reference system strings in various
 formats by authority and Spatial Reference ID (srid). We hope that this
 project provides a simplistic alternative to `osgeo.osr.SpatialReference`
 objects, and allows users access to spatial reference systems that might not have
-access to larger geographic data libraries (e.g. GDAL, osgeo, etc.)
+access to larger geographic data libraries (e.g. GDAL, osgeo, etc.)  
+
+Supported spatial reference formats are:  
+
+* esriwkt
+* geoserver
+* gml
+* html
+* json
+* mapfile
+* mapnik
+* mapnikpython
+* mapserverpython
+* postgis
+* prettywkt
+* proj4
+* proj4js
+* spatialite (derrived from postgis)
  
 ## License:
 ```
